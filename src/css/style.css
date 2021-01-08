@@ -1,0 +1,114 @@
+* {
+    cursor: url('/images/dart3.png'), auto;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    background-image: url("/images/bar1.jpg");
+}
+
+h1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.dartBoards {
+    display: flex;
+    justify-content: space-evenly;  
+    margin-right: 0%;
+}
+
+.board {
+    opacity: 1;
+    display: block;
+    width: 70px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#board1:hover {
+    transform: scale(1.2);
+}
+
+#board2:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    position:right;
+    float: right;
+    width: 70px;
+} 
+.wallet {
+    float:right;
+    width: 70px;   
+    transition: .5s ease;
+}
+
+.info:hover .wallet {
+    opacity: 0.3;
+}
+
+.info:hover .middle {
+    opacity: 1;
+}
+
+#balance {
+    margin-right: 5%;
+    margin-top:0px;
+    font-size: 12px;
+    align-self: start;
+    position: relative;
+    text-align: center  ;
+}
+
+.container {
+    position: left;
+    display: inline-block;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+}
+
+.text2 {
+    color: white;
+    margin-top: 40px;
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+.text3 {
+    text-align: end;
+    color: white;
+    font-size: 10px;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: grey;
+    color: white;
+    font-size: 10px;
+    padding: 10px 15px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 70px;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
