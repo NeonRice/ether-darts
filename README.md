@@ -38,7 +38,7 @@ function pick(bool _choice) external payable {
 ### ⚠️ Random choice generation ⚠️
 The function that handles our random choice generation. Generates a unique result every time.
 
-⚠️**BEWARE!**⚠️ Deploying this contract on a network that has value associated with it is not recommended as this random choice generation poses a vulnerability
+⚠️**BEWARE!**⚠️ Deploying this contract on a network that has value associated with it is not recommended as this random choice generation poses a [vulnerability](https://ethereum.stackexchange.com/questions/191/how-can-i-securely-generate-a-random-number-in-my-smart-contract)
 ```c++
 function generateNextCorrectChoice() private{
     uint random100 = randMod(100);
